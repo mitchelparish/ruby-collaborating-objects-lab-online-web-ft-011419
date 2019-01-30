@@ -21,18 +21,9 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    artist = @@all.collect do |a|
-      if name == a.name
-        artist = a
-      else
-        artist = Song.new(name)
-      end
+    artist = @@all.find_or_create_by_name do |a|
+      name == a.name
     end
-    artist
+    artist      
   end
-
-
-
-
-
 end
