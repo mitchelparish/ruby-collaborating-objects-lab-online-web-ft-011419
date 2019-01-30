@@ -20,4 +20,18 @@ class Artist
     @@all
   end
 
+  def find_or_create_by_name(name)
+    artist = @@all.collect do |a|
+      if name == a.name
+        artist = a
+      else 
+        artist = Song.new(name)
+      end
+      artist
+    end
+
+
+
+  
+
 end
