@@ -27,8 +27,9 @@ class Artist
       else
         artist = Song.new(name)
       end
-      artist
     end
+    artist
+  end
 
 
 
