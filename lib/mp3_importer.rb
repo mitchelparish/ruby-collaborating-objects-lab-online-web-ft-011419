@@ -1,5 +1,5 @@
 class MP3Importer
-  attr_reader :file
+  attr_reader :path 
 
   def initialize(path)
     @path = path
@@ -9,7 +9,7 @@ class MP3Importer
     @files ||= Dir.chdir(@path) do
       Dir.glob('*.mp3')
     end
-  end 
+  end
 
   def import
     files.each do |file|
