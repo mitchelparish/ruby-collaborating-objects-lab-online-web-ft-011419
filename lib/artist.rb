@@ -24,7 +24,7 @@ class Artist
     artist = @@all.collect do |a|
       if name == a.name
         artist = a
-      else 
+      else
         artist = Song.new(name)
       end
       artist
@@ -32,6 +32,6 @@ class Artist
 
 
 
-  
+
 
 end
