@@ -26,4 +26,11 @@ class Artist
     end
     artist || Artist.new(name)
   end
+
+  def print_songs
+    @songs.each do |s|
+      puts s.name 
+  end
+
+  
 end
