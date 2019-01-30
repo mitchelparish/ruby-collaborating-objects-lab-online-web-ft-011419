@@ -24,6 +24,6 @@ class Artist
     artist = @@all.find_or_create_by_name do |a|
       name == a.name
     end
-    artist      
+    artist
   end
 end
