@@ -1,9 +1,9 @@
 class MP3Importer
   attr_reader :file
 
-  def initialize(name)
-    @name = name
-  end 
+  def initialize(file)
+    @file = file 
+  end
 
 
 end
